@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>video-chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/public/css/index.css">
+</head>
+<body>
+<div class="header">
+  <h1>SkyMeet</h1>
+</div>
+<div class="container">
+  <h1>Let's Get Talking!</h1>
+  <form id="form-room" action="/" method="post">
+    <div>
+      <label for="username">Please enter your name:</label>
+      <input type="text" name="username" id="username" required>
+      <input name="id" id="id" value="{{ .RoomUuid }}" hidden>
+    </div>
+    <div class="btns">
+      <input class="btn" type="submit" name="submit" value="Enter">
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="/static/public/js/main.js" async></script>
+</body>
+</html>

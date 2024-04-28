@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>room</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/public/css/room.css">
+</head>
+<body onload="init()">
+<div class="header">
+  <h1>SkyMeet</h1>
+</div>
+<div class="container-wrapper" style="display: flex">
+  <div class="container-large">
+    <input type="text" id="textToCopy" value="{{ .RoomLink }}" style="display: none;">
+    <div class="btns">
+      <button id="copyButton" class="btn">Room Link</button>
+      <button id="exitButton" class="btn">Exit Room</button>
+    </div>
+    <div class="video-grid" id="video-grid">
+      <div class="video-box">
+        <p id="localName" class="clientName">{{ .PeerId }}</p>
+        <video id="localVideo" playsinline autoplay muted></video>
+      </div>
+    </div>
+  </div>
+  <div id="chatContainer" class="chat-container">
+    <div class="message-box" id="messageBox"></div>
+    <div class="message-input-container">
+      <input type="text" id="messageInput" class="input message-input" placeholder="Type a message...">
+      <button id="sendButton" class="button send-button">Send</button>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="/static/public/js/main.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.header {
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container-large {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1f1f1f; /
+    border-radius: 8px; /
+}
+
+.message-box {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #2f2f2f;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.message-input-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input.message-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #363636;
+    color: #fff;
+}
+
+.button.send-button {
+    padding: 10px 20px; /* Add padding to button */
+    border-radius: 4px; /* Match border radius with input */
+    border: none; /* Remove border */
+    background-color: #4CAF50; /* Green color for send button */
+    color: white; /* Text color */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-left: 10px; /* Add spacing between input and button */
+}
+
+.button.send-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btns {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align videos from left to right */
+}
+
+.video-box {
+    margin: 10px;
+    text-align: center;
+    flex: 0 0 auto; /* Allow videos to grow but not shrink */
+    width: 420px; /* Set width for each video box */
+}
+
+.clientName {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+video {
+    width: 100%; /* Ensure videos fill their containers */
+    max-width: 100%; /* Set maximum width for videos */
+    border-radius: 4px;
+}
