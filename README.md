@@ -4,7 +4,7 @@ SkyMeet is a video chat application built using WebRTC technology. It features a
 ## Key Features
 - Real-time video chat functionality powered by WebRTC
 - In-call chat for sending text messages during video calls
-- Lightweight GoLang-based signaling server
+- Lightweight GoLang-based websocket signaling server
 - Dockerized for easy deployment and scalability
 
 ## Prerequisites
